@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/mhelmi.rakhani/Documents/cikgu_razi/AndroidLoginAndRegistration v2/AndroidLoginAndRegistration/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/mhelmi.rakhani/Documents/cikgu_razi/AndroidLoginAndRegistration v2/AndroidLoginAndRegistration/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-bff5a0d0ec9ae23bdd8fff76088e8b167ac57f06.jar" />
+    </item>
+    <item
+        jar="/Users/mhelmi.rakhani/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/Users/mhelmi.rakhani/Documents/cikgu_razi/AndroidLoginAndRegistration v2/AndroidLoginAndRegistration/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-d119bb0c9e476db61c0bdb80635da90df4a27486.jar" />
+    </item>
+    <item
+        jar="/Users/mhelmi.rakhani/Documents/cikgu_razi/AndroidLoginAndRegistration v2/AndroidLoginAndRegistration/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Users/mhelmi.rakhani/Documents/cikgu_razi/AndroidLoginAndRegistration v2/AndroidLoginAndRegistration/app/build/intermediates/pre-dexed/debug/classes-870367197619af6ba3e16a6f914065653a02f472.jar" />
+    </item>
+    <item
+        jar="/Users/mhelmi.rakhani/Documents/cikgu_razi/AndroidLoginAndRegistration v2/AndroidLoginAndRegistration/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/Users/mhelmi.rakhani/Documents/cikgu_razi/AndroidLoginAndRegistration v2/AndroidLoginAndRegistration/app/build/intermediates/pre-dexed/debug/classes-81e459d9eb7b9ac601298f73e7e520d77b3ca4ab.jar" />
+    </item>
+    <item
+        jar="/Users/mhelmi.rakhani/Documents/cikgu_razi/AndroidLoginAndRegistration v2/AndroidLoginAndRegistration/app/build/intermediates/exploded-aar/com.mcxiaoke.volley/library-aar/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="e40b9a81989bd4a846018551c280f8c4d837bf2e">
+        <dex dex="/Users/mhelmi.rakhani/Documents/cikgu_razi/AndroidLoginAndRegistration v2/AndroidLoginAndRegistration/app/build/intermediates/pre-dexed/debug/classes-3e5765f645897c9598d154dbc2752dc6111bfa5c.jar" />
+    </item>
+
+</items>
