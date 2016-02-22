@@ -85,7 +85,8 @@ $app->post('/register', function() use ($app) {
                 $response["message"] = "Sorry, this email already existed";
             }
             // echo json response
-            echoRespnse(201, $response);
+            $output = array('user'=>$response);
+            echoRespnse(201, $output);
         });
 
 /**
@@ -138,8 +139,8 @@ $app->post('/login', function() use ($app) {
 
 /***********************************************************************************
  * User Update
- * url - /user
- * method - PUT
+ * url - /updateuser
+ * method - POST
  * params - name, email, password
  */
 $app->put('/user/:id', 'authenticate', function($user_id) use ($app) {
@@ -175,7 +176,8 @@ $app->put('/user/:id', 'authenticate', function($user_id) use ($app) {
                 $response["message"] = "User failed to update. Please try again!";
             } 
             // echo json response
-            echoRespnse(200, $response);
+                        $output = array('user'=>$response);
+            echoRespnse(200, $output);
         });
 /***********************************************************************************
 /**
@@ -207,7 +209,8 @@ $app->put('/tasks/:id', 'authenticate', function($task_id) use($app) {
                 $response["error"] = true;
                 $response["message"] = "Task failed to update. Please try again!";
             }
-            echoRespnse(200, $response);
+            $output = array('tasks'=>$response);
+            echoRespnse(200, $output);
         });
 
 /**
@@ -243,7 +246,8 @@ $app->get('/tasks', 'authenticate', function() {
                 array_push($response["tasks"], $tmp);
             }
 
-            echoRespnse(200, $response);
+            $output = array('tasks'=>$response);
+            echoRespnse(200, $output);
         });
 
 /**
@@ -266,7 +270,8 @@ $app->get('/tasks/:id', 'authenticate', function($task_id) {
                 $response["task"] = $result["task"];
                 $response["status"] = $result["status"];
                 $response["createdAt"] = $result["created_at"];
-                echoRespnse(200, $response);
+                $output = array('tasks'=>$response);
+                echoRespnse(200, $output);
             } else {
                 $response["error"] = true;
                 $response["message"] = "The requested resource doesn't exists";
@@ -301,7 +306,8 @@ $app->post('/tasks', 'authenticate', function() use ($app) {
             } else {
                 $response["error"] = true;
                 $response["message"] = "Failed to create task. Please try again";
-                echoRespnse(200, $response);
+                $output = array('tasks'=>$response);
+                echoRespnse(200, $output);
             }            
         });
 
@@ -321,7 +327,8 @@ $app->delete('/tasks/:id', 'authenticate', function($task_id) use($app) {
                 $response["error"] = true;
                 $response["message"] = "Task failed to delete. Please try again!";
             }
-            echoRespnse(200, $response);
+            $output = array('tasks'=>$response);
+            echoRespnse(200, $output);
         });
 
 /**

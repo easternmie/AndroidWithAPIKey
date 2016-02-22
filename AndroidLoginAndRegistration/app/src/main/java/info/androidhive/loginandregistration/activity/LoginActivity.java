@@ -17,7 +17,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.android.volley.Request.Method;
+import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
@@ -118,7 +118,7 @@ public class LoginActivity extends Activity {
         pDialog.setMessage("Logging in ...");
         showDialog();
 
-        StringRequest strReq = new StringRequest(Method.POST,
+        StringRequest strReq = new StringRequest(Request.Method.POST,
                 AppConfig.URL_LOGIN, new Response.Listener<String>() {
 
             @Override
@@ -238,7 +238,8 @@ public class LoginActivity extends Activity {
         };
 
         // Adding request to request queue
-        AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
+        //AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
+        AppController.getInstance().addToReqQueue(strReq, "loginReq");
     }
 
     private void showDialog() {

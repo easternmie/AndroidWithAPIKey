@@ -1,6 +1,12 @@
 package info.androidhive.loginandregistration.app;
 
 import android.app.Application;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.Volley;
+
+/*import android.app.Application;
 import android.text.TextUtils;
 
 import com.android.volley.Request;
@@ -44,6 +50,35 @@ public class AppController extends Application {
 	}
 
 	public void cancelPendingRequests(Object tag) {
+		if (mRequestQueue != null) {
+			mRequestQueue.cancelAll(tag);
+		}
+	}
+	*/
+public class AppController extends Application {
+	private RequestQueue mRequestQueue;
+	private static AppController mInstance;
+	@Override
+	public void onCreate() {
+		super.onCreate();
+		mInstance = this;
+	}
+	public static synchronized AppController getInstance() {
+		return mInstance;
+	}
+	public RequestQueue getReqQueue() {
+		if (mRequestQueue == null) {
+			mRequestQueue = Volley.newRequestQueue(getApplicationContext());
+		}
+		return mRequestQueue;
+	}
+	public <T> void addToReqQueue(Request<T> req, String tag) {
+		getReqQueue().add(req);
+	}
+	public <T> void addToReqQueue(Request<T> req) {
+		getReqQueue().add(req);
+	}
+	public void cancelPendingReq(Object tag) {
 		if (mRequestQueue != null) {
 			mRequestQueue.cancelAll(tag);
 		}

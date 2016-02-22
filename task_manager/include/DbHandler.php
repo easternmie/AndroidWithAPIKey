@@ -290,7 +290,6 @@ class DbHandler {
             $stmt = $this->conn->prepare("UPDATE users u set u.name = ?, u.email = ?, u.password_hash = ? WHERE u.id = ?");
 
             //echo $password_hash;
-            echo "debug3";
             $stmt->bind_param("sssi", $name, $email, $password_hash, $user_id);
 
             $stmt->execute();
