@@ -1,7 +1,8 @@
 package info.androidhive.loginandregistration.app;
 
 public class AppConfig {
-	public static final String  HOST = "http://10.9.169.165/";
+	//public static final String  HOST = "http://10.9.169.165/";
+	public static final String  HOST = "http://192.168.0.102/";
 
 
 	// Server user login url
