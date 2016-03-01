@@ -25,6 +25,6 @@ Step by step :
 
 - b). import project "AndroidLoginAndRegistration" to your android studio
 
-- c). adjust your "String URL_LOGIN" and "String URL_REGISTER" to your approriate hosting API URI
+- c). adjust your "String URL_LOGIN", "String URL_REGISTER" and "URL_UPDATE" to your approriate hosting API URI
 
 - d). compile your android app to phone or emulator, it should working well.
